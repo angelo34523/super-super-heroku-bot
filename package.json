@@ -1,6 +1,6 @@
 {
-  "name": "Test",
-  "description": "Test",
+  "name": "AngelBot",
+  "description": "BOT EM DESENVOLVIMENTO",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {

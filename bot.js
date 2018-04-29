@@ -16,21 +16,29 @@ client.on('message', message => {
 	message.reply('Ola, eu sou o angelbot desenvolvido por angelo gabriel kkk, voce deve tar se perguntando oque eu fasso certo? e eu te respondo nada!!!');
   	}
 	
+client = discord.Client()
+	
 @client.event
-async def on_message(message):
-    if message.content.startswith('!entrar'):
-      try:
-        canal = message.author.voice.voice_channel
-        await client.join_voice_channel(canal)
-      except discord.errors.InvalidArgument:
-             await client.send_message(message.channel, "Você precisa esta conectado a um canal de voz!")
+async def on_ready ():
+    print ('BOT ONLINE - Ola Mundo!')
+    print (client.user.name)
+    print (client.user.id)
+    print ('----------BM--------')
 
-    if message.content.startswith('!sair'):
-      try:
-        canaldevoz = client.voice_client_in(message.server)
-        await canaldevoz.disconnect()
-      except AttributeError:
-          await client.send_message(message.channel,"O bot não esta conectado em nenhum canal de voz!")
 
+@client.event
+async def on_message (message):
+    if message.content.lowet().startswith('!test'):
+        await client.send_message(message.channel, "Ola mundo, estou vivo.")
+
+
+    if message.content.lowet().startswith('!moeda'):
+      choice = random.randint(1,2)
+      if choice == 1:
+       await client.add_reaction(message, 'ðŸ˜€')
+      if choice == 2:
+       await client.add_reaction(message, 'ðŸ¤´')
+
+	
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

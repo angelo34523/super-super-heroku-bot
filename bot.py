@@ -4,7 +4,7 @@ import discord
 client = discord.Client()
 
 @client.event
- ef on_ready():
+client.on('ready', () => {
     print(client.user.name)
     print("Bot online - Olá Mundo!")
 

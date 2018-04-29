@@ -1,13 +1,23 @@
 {
-  "name": "AngelBot",
-  "description": "Test",
-  "version": "0.0.0",
-  "main": "bot.js",
+  "version": "0.2.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
   "scripts": {
-    "start": "node Musica.json"
+    "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
-  }
-}
+    "ajax-request": "^1.2.1",
+    "discord.js": "^7.0.1",
+    "express": "^4.13.3",
+    "get-json": "0.0.3",
+    "jquery": "^2.2.4"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+"license": "MIT"

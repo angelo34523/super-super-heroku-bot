@@ -5,13 +5,6 @@ import random
 client = discord.Client()
 
 @client.event
-    print ('BOT ONLINE - Ola Mundo!')
-    print (client.user.name)
-    print (client.user.id)
-    print ('----------BM--------')
-
-
-@client.event
 async def on_message (message):
     if message.content.lower().startswith('!test'):
         await client.send_message(message.channel, "Ola mundo, estou vivo.")

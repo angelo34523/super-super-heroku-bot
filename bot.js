@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
-async def on_message(message):
+client.on(message):
     if message.content.startswith('!entrar'):
       try:
         canal = message.author.voice.voice_channel

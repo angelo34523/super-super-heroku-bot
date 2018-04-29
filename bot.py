@@ -20,3 +20,7 @@ async def on_ready():
 async def hi(ctx):
   await bot.say("Hello there"+" "+ctx.message.author.name)
 
+  
+  
+  // THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);

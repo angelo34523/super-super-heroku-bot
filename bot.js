@@ -18,7 +18,7 @@ client.on('message', message => {
 	
 	
 @client.on
-async def on_ready ():
+client.on on_ready ():
     print ('BOT ONLINE - Ola Mundo!')
     print (client.user.name)
     print (client.user.id)
@@ -26,7 +26,7 @@ async def on_ready ():
 
 
 @client.on
-async def on_message (message):
+client.on def on_message (message):
     if message.content.lower().startswith('!test'):
         await client.send_message(message.channel, "Ola mundo, estou vivo.")
 

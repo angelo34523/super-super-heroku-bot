@@ -11,7 +11,8 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-       message.content == startswith('!entrar'):
+    if (message.content === '!ping') {
+	message.reply('pong');
       try:
         canal = message.author.voice.voice_channel
         await client.join_voice_channel(canal)

@@ -15,6 +15,7 @@ client.on('message', message => {
     if (message.content === '!angelbot') {
 	message.reply('Ola, eu sou o angelbot desenvolvido por angelo gabriel kkk, voce deve tar se perguntando oque eu fasso certo? e eu te respondo nada!!!');
   	}
+});
 	
 
 // THIS  MUST  BE  THIS  WAY

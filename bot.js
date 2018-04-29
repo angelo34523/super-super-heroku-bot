@@ -4,12 +4,12 @@ const client = new Discord.Client();
 
 client = discord.Client()
 
-@client.on
+client.event
 async def on_ready():
     print(client.user.name)
     print("Bot online - Olá Mundo!")
 
-@client.on
+client.event
 async def on_message(message):
     if message.content.startswith('!entrar'):
       try:

@@ -12,8 +12,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!ping') {
-	message.reply('pong');
+    if (message.content === '!Angelbot') {
+	message.reply('Ola, eu sou o angelbot desenvolvido por angelo gabriel kkk, voce deve tar se perguntando oque eu fasso certo? e eu te respondo nada!!!');
   	}
 });
       

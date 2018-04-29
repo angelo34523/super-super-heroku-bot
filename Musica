@@ -23,9 +23,9 @@ async def on_message(message):
         await canaldevoz.disconnect()
       except AttributeError:
           await client.send_message(message.channel,"O bot não esta conectado em nenhum canal de voz!")
-
-
-
+          
+          
+          
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 

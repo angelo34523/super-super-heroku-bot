@@ -1,13 +1,15 @@
-// Load Discord.js and make a new Discord.client
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-//Ping command
-if(message.content === "gmping") {
-message.channel.send('Pong!');
-}
+    console.log('I am ready!');
+});
 
- 
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('VO LA SABER, NAO SOU VIDENTE PRA SABER PORRA');
+  	}
+});      
 
-client.login(process.env.TOKEN);
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);

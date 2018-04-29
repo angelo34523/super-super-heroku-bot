@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 },
-'!roll': {
+'!roll'  {
   execute: roll,
   description: 'roll from 1-100'
       

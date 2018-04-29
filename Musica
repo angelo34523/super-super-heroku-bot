@@ -27,4 +27,5 @@ async def on_message (message):
 
 
 
-client.run('NDM5OTgyNTIwNzI2MTkyMTI4.DcbKMw.pikF7rgbWga9g9AlFAFwsprx-Ds')
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);

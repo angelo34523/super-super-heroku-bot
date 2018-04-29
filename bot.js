@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-       message.content.startswith('!entrar'):
+       message.content == startswith('!entrar'):
       try:
         canal = message.author.voice.voice_channel
         await client.join_voice_channel(canal)

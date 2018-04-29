@@ -1,15 +1,26 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+import discord
+from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
+import os
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot = commands.Bot(command_prefix="a.")
+
+
+
+@bot.event
+async def on_ready():
+  print(bot.user.name)
+
+  
+  
+@bot.command(pass_context=True)
+async def hi(ctx):
+  await bot.say("Hello there"+" "+ctx.message.author.name)
+  
+  
+  
+  
+bot.run(os.environ['BOT_TOKEN'])

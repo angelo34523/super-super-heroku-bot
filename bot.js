@@ -9,10 +9,6 @@ client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
-client.on('message', message => {
-    if (message.content === 'fuck') {
-    	message.reply('lock');
-  	}
 });
 
 // THIS  MUST  BE  THIS  WAY

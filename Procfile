@@ -1,1 +1,2 @@
-worker: musica
+worker: python musica
+

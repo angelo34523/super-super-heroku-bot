@@ -56,7 +56,7 @@ class ConnectionState:
         self._listeners = []
         self.clear()
 
-    def clear(self):
+    def clear(self)
         self.user = None
         self.sequence = None
         self.session_id = None

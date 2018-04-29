@@ -4,7 +4,7 @@
   "description": "Cool playback bot with other awesome features.",
   "main": "Bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bot.js"
   },
   "author": "Rasmus Kockum",
   "license": "ISC",

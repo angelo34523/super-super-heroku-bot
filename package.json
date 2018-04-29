@@ -4,7 +4,7 @@
   "description": "Cool playback bot with other awesome features.",
   "main": "Bot.js",
   "scripts": {
-    "start": "bot.js"
+    "start": "node bot.js"
   },
   "author": "Rasmus Kockum",
   "license": "ISC",

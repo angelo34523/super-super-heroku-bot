@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client = discord.Client()
 
 client.event
-async ():
+async ()
     print(client.user.name)
     print("Bot online - Olá Mundo!")
 

@@ -3,10 +3,6 @@ import discord
 
 client = discord.Client()
 
-@client.event
-
-    print(client.user.name)
-    print("Bot online - Olá Mundo!")
 
 @client.event
 async def on_message(message):

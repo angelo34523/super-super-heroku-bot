@@ -12,18 +12,15 @@ var ver ="0.86"
 var mybot = new Discord.Client();
 var getJSON = require('get-JSON');
 
-
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'junior') {
+    	message.reply('VIADO!!!');
   	}
-});
-
-
+});      
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

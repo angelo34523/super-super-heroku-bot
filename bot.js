@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-/client.on("ready" , () => {
+client.on('ready', () => {
 //Console log if the bot started succesfully
 console.log('Bot has started with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.');
 //Set bot playing game status

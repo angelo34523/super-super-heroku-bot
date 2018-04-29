@@ -15,8 +15,7 @@ client.on('message', message => {
     if (message.content === '!angelbot') {
 	message.reply('Ola, eu sou o angelbot desenvolvido por angelo gabriel kkk, voce deve tar se perguntando oque eu fasso certo? e eu te respondo nada!!!');
   	}
-});
-
+	
 @client.event
 async def on_message(message):
     if message.content.startswith('!entrar'):
@@ -32,8 +31,6 @@ async def on_message(message):
         await canaldevoz.disconnect()
       except AttributeError:
           await client.send_message(message.channel,"O bot não esta conectado em nenhum canal de voz!")
-
-});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

@@ -47,7 +47,6 @@ log = logging.getLogger(__name__)
 ReadyState = namedtuple('ReadyState', ('launch', 'servers'))
 
 class ConnectionState:
-    def __init__(self, dispatch, chunker, syncer, max_messages, *, loop):
         self.loop = loop
         self.max_messages = max_messages
         self.dispatch = dispatch

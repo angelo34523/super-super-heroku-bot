@@ -1,2 +1,1 @@
-worker: python Musica
-
+worker: node bot.js

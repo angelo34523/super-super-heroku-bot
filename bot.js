@@ -16,9 +16,8 @@ client.on('message', message => {
 	message.reply('Ola, eu sou o angelbot desenvolvido por angelo gabriel kkk, voce deve tar se perguntando oque eu fasso certo? e eu te respondo nada!!!');
   	}
 	
-client = discord.Client()
 	
-@client.event
+@client.on
 async def on_ready ():
     print ('BOT ONLINE - Ola Mundo!')
     print (client.user.name)
@@ -26,13 +25,13 @@ async def on_ready ():
     print ('----------BM--------')
 
 
-@client.event
+@client.on
 async def on_message (message):
-    if message.content.lowet().startswith('!test'):
+    if message.content.lower().startswith('!test'):
         await client.send_message(message.channel, "Ola mundo, estou vivo.")
 
 
-    if message.content.lowet().startswith('!moeda'):
+    if message.content.lower().startswith('!moeda'):
       choice = random.randint(1,2)
       if choice == 1:
        await client.add_reaction(message, 'ðŸ˜€')

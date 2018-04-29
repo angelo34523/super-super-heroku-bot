@@ -10,7 +10,6 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
-});
 
 async def on_message(message):
     if message.content.startswith('!entrar'):

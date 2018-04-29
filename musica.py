@@ -5,6 +5,8 @@ client = discord.Client()
 
 
 @client.event
+
+
 async def on_message(message):
     if message.content.startswith('!entrar'):
       try:

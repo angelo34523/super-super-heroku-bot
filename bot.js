@@ -6,11 +6,6 @@ var Queue = require('./components/queue.js');
 var TrackHelper = require('./components/trackhelper.js');
 var WordService = require('./components/wordservice.js');
 var WeatherService = require('./components/weatherservice.js');
-var express = require('express')
-var app = express()
-var ver ="0.86"
-var mybot = new Discord.Client();
-var getJSON = require('get-JSON');
 
 client.on('ready', () => {
     console.log('I am ready!');

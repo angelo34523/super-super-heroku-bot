@@ -2,9 +2,10 @@
   "name": "AngelBot",
   "description": "BOT EM DESENVOLVIMENTO",
   "version": "0.0.0",
-  "main": "musica",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
+    "start": "node musica.json"
   },
   "dependencies": {
     "discord.js": "11.1.0",

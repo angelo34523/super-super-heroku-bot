@@ -10,7 +10,7 @@ async ()
     print("Bot online - Olá Mundo!")
 
 client.event
-async on_message(message):
+async (message):
     if message.content.startswith('!entrar'):
       try:
         canal = message.author.voice.voice_channel

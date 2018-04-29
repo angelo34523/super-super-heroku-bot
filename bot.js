@@ -11,7 +11,7 @@ async ()
 
 client.event
 async (message)
-    if message.content.startswith('!entrar'):
+    if content.startswith('!entrar'):
       try:
         canal = message.author.voice.voice_channel
         await client.join_voice_channel(canal)

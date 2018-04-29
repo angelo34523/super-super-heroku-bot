@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var Discord = require('discord.js');
 var Bot = new Discord.Client();
 var Helper = require('./components/helper.js');
 var Queue = require('./components/queue.js');

@@ -35,6 +35,5 @@ async def on_message(message):
 
 });
 
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

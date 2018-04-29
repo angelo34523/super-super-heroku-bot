@@ -5,12 +5,12 @@ const client = new Discord.Client();
 client = discord.Client()
 
 client.event
-async def on_ready():
+async on_ready():
     print(client.user.name)
     print("Bot online - Olá Mundo!")
 
 client.event
-async def on_message(message):
+async on_message(message):
     if message.content.startswith('!entrar'):
       try:
         canal = message.author.voice.voice_channel

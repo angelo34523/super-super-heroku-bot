@@ -11,5 +11,11 @@ client.on('message', message => {
   	}
 });
 
+},
+'!roll': {
+execute: roll,
+description: 'roll from 1-100'
+      
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

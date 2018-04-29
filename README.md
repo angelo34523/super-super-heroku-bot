@@ -1,2 +1,2 @@
 # super-super-heroku-bot
-BOT ONLINE 24 HORAS
+Bot using heroku, 24/7!

@@ -14,7 +14,7 @@ client.on('message', message => {
 });
 
 mybot.on("message", function(message) {
-    if (message.content === "!live") {
+    if (message.content === "_live") {
         getJSON("https://api.twitch.tv/kraken/streams/lalicel", function(err, res) {
             if (res.stream == null) {
                 mybot.reply(message, "she is currently not live");

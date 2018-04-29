@@ -1,2 +1,2 @@
-worker: python musica
+worker: python Musica
 

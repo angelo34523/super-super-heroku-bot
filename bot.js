@@ -13,8 +13,8 @@ client.on('message', message => {
 
 },
 '!roll': {
-execute: roll,
-description: 'roll from 1-100'
+  execute: roll,
+  description: 'roll from 1-100'
       
 
 // THIS  MUST  BE  THIS  WAY
